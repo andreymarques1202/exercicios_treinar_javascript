@@ -48,3 +48,11 @@ for(let i = 0; i < frutas.length; i++) {
 //temos tambem algo que faz exatamente oque foi feito acima com forEach
 
 frutas.forEach(exibir);
+
+//exemplo dois
+
+const paises = ["brasil", "eua", "coreia do sul", "japao"];
+
+for(let l = 0; l < paises.length; l++) {
+    console.log(paises[l]);
+}
