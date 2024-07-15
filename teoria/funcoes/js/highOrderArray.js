@@ -10,3 +10,13 @@ const onePiece = [
     {nome: "Chopper", akumaNoMi: true, funcao: "Médico", recompensa: "50 beris"},
     {nome: "Ussop", akumaNoMi: false, funcao: "Atirador", recompensa: "30 milhões de beris"},
 ]
+
+//Metodo map pega um array existente e criando um novo array sem alterar o array original
+
+const exemplo = onePiece.map(function (personagem) {
+    return personagem.nome;
+});
+
+console.log(exemplo);
+
+
