@@ -19,4 +19,8 @@ const exemplo = onePiece.map(function (personagem) {
 
 console.log(exemplo);
 
+//Metodo filter ele pega um array existente e filtra o array com elementos especificos e criar um array novo
 
+const akumaNoMi = onePiece.filter(function (personagm) {
+    return personagem.akumaNoMi === true;
+});
