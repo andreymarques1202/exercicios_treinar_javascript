@@ -21,6 +21,30 @@ console.log(exemplo);
 
 //Metodo filter ele pega um array existente e filtra o array com elementos especificos e criar um array novo
 
-const akumaNoMi = onePiece.filter(function (personagm) {
+const akumaNoMi = onePiece.filter(function (personagem) {
     return personagem.akumaNoMi === true;
 });
+
+console.log(akumaNoMi);
+
+
+//Metodo reduce transforma um array em qualquer coisa 
+
+const cartasDeProcurado = onePiece.reduce(function (valor, personagem) {
+    return valor + personagem.recompensa;
+}, 0);
+
+console.log("Total de recompensa dos personagens: " + cartasDeProcurado + " beris");
+
+
+const tripulantes = onePiece.reduce(function (objeto, tripulante) {
+    if(objeto[tripulante.funcao]) {
+        objeto[tripulante.funcao].push(tripulante);
+    } else {
+        objeto[tripulante.funcao] = [tripulante];
+    }
+
+    return objeto;
+}, {});
+
+console.log(tripulantes);
