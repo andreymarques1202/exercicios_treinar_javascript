@@ -48,3 +48,32 @@ const tripulantes = onePiece.reduce(function (objeto, tripulante) {
 }, {});
 
 console.log(tripulantes);
+
+
+//Metodo sort ele pega um array e ordena os dados do array ele manipula o array original diferente dos metodos reduce, filte e map
+
+const recompensas = [
+    {recompensa: 30},
+    {recompensa: 99},
+    {recompensa: 10},
+    {recompensa: 12}, 
+    {recompensa: 32},
+    {recompensa: 4}
+];
+
+console.log(recompensas);
+
+/*
+recompensas.sort(function (valor, recompensa) {
+    return valor.recompensa - recompensa.recompensa;
+});
+
+console.log(recompensas);*/
+
+//para usar o sort sem alterar a estrutura do array original podemos utilizar o slice
+
+const recompensaCopia = recompensas.slice().sort(function (valor, recompensa) {
+    return valor.recompensa - recompensa.recompensa;
+});
+
+console.log(recompensaCopia);
