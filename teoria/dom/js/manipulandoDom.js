@@ -21,19 +21,18 @@ function addContact() {
             return element.contact;
         })
     
-        for(let namesI = 0; namesI < names.length; namesI++) {
-            const name = document.createElement("p");
-            name.textContent = "Contato: " + names[namesI];
-            list.appendChild(name);
-            document.body.appendChild(list); 
-        }        
+                const div = document.createElement("div");
+                const name = document.createElement("p");
+                name.textContent = "Contato: " + names[names.length -1];
+                const number = document.createElement("p");
+                number.textContent = "Numero: " + numbers[numbers.length - 1];
+                
+                div.appendChild(name);
+                div.appendChild(number);
+                list.appendChild(div);
+                document.body.appendChild(list); 
+        
     
-        for(let i = 0; i < numbers.length; i++) {
-            const number = document.createElement("p");
-            number.textContent = "Numero: " + numbers[i];
-            list.appendChild(number);
-            document.body.appendChild(list);
-        }
     }
 
     console.log(list);
