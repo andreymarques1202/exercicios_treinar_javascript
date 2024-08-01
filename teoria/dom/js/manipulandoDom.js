@@ -5,7 +5,7 @@ function addContact() {
     const list = document.getElementById("contacts-list");
     const contactName = prompt("Informe o nome do contato:");
     const contactDDD = prompt("Informe o ddd:");
-    const contact = prompt("Informe o número:");
+    const contact = prompt("Informe o Número:");
 
     const contactNumber = "(" + contactDDD + ") " + contact;
     
